@@ -1,0 +1,156 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(32, 27, 27);
+}
+body .carousel-buttons {
+  width: 80%;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container h3 {
+  margin-block-end: 0;
+  font-size: larger;
+}
+body .container p {
+  margin-block-start: 0;
+}
+body .container h1 {
+  font-size: 7rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+body .container .weather-2 {
+  color: rgb(70, 65, 65);
+}
+body .indicator {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .indicator span {
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+body .indicator .selected {
+  background-color: white;
+}
+body .container-week {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7rem;
+}
+body .container-week div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container-week i {
+  margin: 1rem 0;
+}
+body .container-week .avg-temp {
+  font-size: 15px;
+}
+body .line {
+  border: 10px solid #282828;
+  display: none;
+}
+body .indicator-2 {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .indicator-2 span {
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+body .indicator-2 .selected {
+  background-color: white;
+}
+body .container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container-2 h3 {
+  margin-block-end: 0;
+  font-size: larger;
+}
+body .container-2 p {
+  margin-block-start: 0;
+}
+body .container-2 h1 {
+  font-size: 7rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+body .container-2 .weather-2 {
+  color: rgb(70, 65, 65);
+}
+
+/* Stile per nascondere la seconda schermata per default */
+@media (max-width: 769px) {
+  body {
+    background-image: url("/project/img/cina-crea-pioggia-inseminazione-nuvole-fronteggiare-siccitA-v3-605504-1200x1200.webp");
+  }
+  .second-screen {
+    display: none;
+  }
+}
+/* Stile per visualizzare la seconda schermata quando la finestra è abbastanza larga */
+@media (min-width: 769px) {
+  body {
+    background-image: url("/project/img/cina-crea-pioggia-inseminazione-nuvole-fronteggiare-siccitA-v3-605504-1200x1200.webp");
+  }
+  body .big-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+  body .first-screen {
+    width: 100%;
+  }
+  body .first-screen::after {
+    border: 10px solid white;
+  }
+  body .second-screen {
+    display: block;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  body .line {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-image: url("/project/img/cina-crea-pioggia-inseminazione-nuvole-fronteggiare-siccitA-v3-605504-1200x1200.webp");
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

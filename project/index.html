@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/project/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="/project/main.js" defer></script>
+    <script src="/project/store.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="big-container">
+      <div class="first-screen">
+        <!-- section weather -->
+        <div class="indicator">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="container">
+          <h3 id="city">Nome Città</h3>
+          <p class="weather-2" id="weather">Weather</p>
+
+          <h1 id="temp">30°</h1>
+          <p><span id="temp-min">15°/</span>/<span id="temp-max">20°</span></p>
+
+          <div class="carousel-buttons">
+            <span onclick="prevCity()">
+              <i class="fa-solid fa-chevron-left"></i>
+              Previous
+            </span>
+            <span onclick="nextCity()">
+              Next
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- section weekly weather -->
+        <div class="container-week">
+          <div id="sun">
+            <p>Sun</p>
+            <i class="fa-regular fa-sun"></i>
+            <p class="avg-temp">19°/31°</p>
+          </div>
+          <div id="mon">
+            <p>Mon</p>
+            <i class="fa-solid fa-cloud"></i>
+            <p class="avg-temp">19°/31°</p>
+          </div>
+          <div id="tue">
+            <p>Tue</p>
+            <i class="fa-regular fa-sun"></i>
+            <p class="avg-temp">19°/31°</p>
+          </div>
+          <div id="wed">
+            <p>Wed</p>
+            <i class="fa-regular fa-sun"></i>
+            <p class="avg-temp">19°/31°</p>
+          </div>
+          <div id="thu">
+            <p>Thu</p>
+            <i class="fa-solid fa-cloud"></i>
+            <p class="avg-temp">19°/31°</p>
+          </div>
+          <div id="fri">
+            <p>Fri</p>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p class="avg-temp">19°/31°</p>
+          </div>
+          <div id="sat">
+            <p>Sat</p>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p class="avg-temp">19°/31°</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- divisore -->
+      <div class="line"></div>
+
+      <div class="second-screen">
+        <!-- section weather -->
+        <div class="indicator-2">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="container-2">
+          <h3 id="city-2">Nome Città</h3>
+          <p class="weather-2" id="weather-2">Weather</p>
+
+          <h1 id="temp-2">30°</h1>
+          <p>
+            <span id="temp-min-2">15°/</span>/<span id="temp-max-2">20°</span>
+          </p>
+
+          <div class="carousel-buttons">
+            <span onclick="prevCity2()">
+              <i class="fa-solid fa-chevron-left"></i>
+              Previous
+            </span>
+            <span onclick="nextCity2()">
+              Next
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- section weekly weather -->
+        <div class="container-week">
+          <div id="sun-2">
+            <p>Sun</p>
+            <i class="fa-regular fa-sun"></i>
+            <p class="avg-temp">19°/31°</p>
+          </div>
+          <div id="mon-2">
+            <p>Mon</p>
+            <i class="fa-solid fa-cloud"></i>
+            <p class="avg-temp">19°/31°</p>
+          </div>
+          <div id="tue-2">
+            <p>Tue</p>
+            <i class="fa-regular fa-sun"></i>
+            <p class="avg-temp">19°/31°</p>
+          </div>
+          <div id="wed-2">
+            <p>Wed</p>
+            <i class="fa-regular fa-sun"></i>
+            <p class="avg-temp">19°/31°</p>
+          </div>
+          <div id="thu-2">
+            <p>Thu</p>
+            <i class="fa-solid fa-cloud"></i>
+            <p class="avg-temp">19°/31°</p>
+          </div>
+          <div id="fri-2">
+            <p>Fri</p>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p class="avg-temp">19°/31°</p>
+          </div>
+          <div id="sat-2">
+            <p>Sat</p>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p class="avg-temp">19°/31°</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
